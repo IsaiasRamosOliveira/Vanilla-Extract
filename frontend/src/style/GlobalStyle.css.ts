@@ -6,8 +6,5 @@ globalStyle("*", {
     boxSizing: "border-box",
     fontFamily: "sans-serif",
     textDecoration: "none",
-})
-
-export const container = style({
-    
+    listStyle: "none"
 })

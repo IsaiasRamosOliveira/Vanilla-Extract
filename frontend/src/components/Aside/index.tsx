@@ -1,9 +1,10 @@
-import Link from 'next/link';
-import React from 'react'
+import Link from "next/link";
+import React from "react";
+import { aside } from "./Aside.css";
 
 const Aside = () => {
   return (
-    <aside>
+    <aside className={aside}>
       <nav>
         <ul>
           <li>
@@ -22,6 +23,6 @@ const Aside = () => {
       </nav>
     </aside>
   );
-}
+};
 
-export default Aside
+export default Aside;
