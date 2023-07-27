@@ -10,6 +10,7 @@ globalStyle("*", {
     listStyle: "none",
 })
 
+
 globalStyle("a", {
     color: vars.colors.latter
 })
