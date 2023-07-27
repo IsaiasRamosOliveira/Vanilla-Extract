@@ -2,13 +2,13 @@ import {
     defineProperties,
     createSprinkles
 } from '@vanilla-extract/sprinkles';
+import { colors } from './palete';
 
 const space = {
     none: 0,
     small: '4px',
     medium: '8px',
     large: '16px'
-    // etc.
 };
 
 const responsiveProperties = defineProperties({
@@ -53,17 +53,6 @@ const responsiveProperties = defineProperties({
         placeItems: ['justifyContent', 'alignItems']
     }
 });
-
-const colors = {
-    'blue-50': '#eff6ff',
-    'blue-100': '#dbeafe',
-    'blue-200': '#bfdbfe',
-    'gray-700': '#374151',
-    'gray-800': '#1f2937',
-    'gray-900': '#111827'
-    // etc.
-};
-
 const colorProperties = defineProperties({
     conditions: {
         lightMode: {},
@@ -73,7 +62,6 @@ const colorProperties = defineProperties({
     properties: {
         color: colors,
         background: colors
-        // etc.
     }
 });
 

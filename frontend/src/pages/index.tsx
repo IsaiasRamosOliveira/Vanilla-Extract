@@ -1,12 +1,13 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
+import Menu from "../components/Menu";
 
 const Home: NextPage = () => {
   return (
-    <div >
+    <section>
+      <Menu/>
       <h1>Home</h1>
-      
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default Home
+export default Home;
