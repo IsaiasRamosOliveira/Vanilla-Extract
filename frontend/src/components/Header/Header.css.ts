@@ -31,7 +31,8 @@ export const input = style({
     minWidth: 300,
     height: 60,
     border: "none",
-    outline: "none"
+    outline: "none",
+    color: vars.colors.latter
 })
 
 export const img = style({

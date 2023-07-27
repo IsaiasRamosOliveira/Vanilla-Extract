@@ -2,7 +2,7 @@ import {
     defineProperties,
     createSprinkles
 } from '@vanilla-extract/sprinkles';
-import { colors } from './palete';
+import { vars } from './vars.css';
 
 const space = {
     none: 0,
@@ -60,8 +60,8 @@ const colorProperties = defineProperties({
     },
     defaultCondition: 'lightMode',
     properties: {
-        color: colors,
-        background: colors
+        color: vars.colors,
+        background: vars.colors
     }
 });
 

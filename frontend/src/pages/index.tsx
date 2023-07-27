@@ -1,11 +1,12 @@
 import type { NextPage } from "next";
 import Menu from "../components/Menu";
-import { messages } from "../style/Home.css";
+import { container, messages } from "../style/Home.css";
 import Message from "../components/Message";
+import Actions from "../components/Actions";
 const Home: NextPage = () => {
-  
   return (
-    <section>
+    <section className={container
+    }>
       <Menu />
       <div className={messages}>
         <Message />
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
         <Message />
         <Message />
       </div>
+      <Actions />
     </section>
   );
 };

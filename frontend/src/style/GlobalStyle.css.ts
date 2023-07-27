@@ -14,6 +14,15 @@ globalStyle("*", {
 globalStyle("a", {
     color: vars.colors.latter
 })
+export const checkout = style({
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    width: 18,
+    height: 18,
+    backgroundColor: vars.colors.purple,
+    borderRadius: 8,
+})
 
 export const icon = style({
     fontSize: 22,
