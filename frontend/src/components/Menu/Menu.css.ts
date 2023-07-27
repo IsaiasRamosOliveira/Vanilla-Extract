@@ -4,7 +4,6 @@ export const menu = style({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    
     padding: "20px"
 })
 

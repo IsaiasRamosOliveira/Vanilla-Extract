@@ -9,6 +9,7 @@ export const content = style({
     overflowX: "auto",
     "::-webkit-scrollbar": {
         display: "none"
-    }
+    },
+    position: "relative"
 
 })
