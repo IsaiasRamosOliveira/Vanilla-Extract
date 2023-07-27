@@ -10,4 +10,5 @@ export const messages = style({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
+    paddingBottom: "100px"
 })
