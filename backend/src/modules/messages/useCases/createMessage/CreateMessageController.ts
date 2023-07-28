@@ -1,5 +1,5 @@
-import createMessageCase from "./CreateMessageCase"
-import { Request, Response } from "express"
+import { Request, Response } from "express";
+import createMessageCase from "./CreateMessageCase";
 class CreateMessageController {
     async handle(req: Request, res: Response) {
         const { to, from, description, id_user } = req.body
