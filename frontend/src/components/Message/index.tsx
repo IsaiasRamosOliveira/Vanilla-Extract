@@ -3,15 +3,9 @@ import { button, icon, message, messageBtns } from "./Message.css";
 import { useState } from "react";
 import { PiStarLight, PiStarFill } from "react-icons/pi";
 import { checkout } from "../../style/GlobalStyle.css";
+import { IMessage } from "../../interfaces/IMessage";
 
-interface IMessage {
-  user: string;
-  to: string;
-  from: string;
-  description: string;
-}
-
-const Message = ({ user, to, from, description }: IMessage) => {
+const Message = ({ id_user, to, from, description, createdAt }: IMessage) => {
   const [starred, setStarred] = useState(false);
   return (
     <div className={message}>
@@ -32,10 +26,10 @@ const Message = ({ user, to, from, description }: IMessage) => {
             <PiStarFill className={icon} />
           )}
         </button>
-        <p>Dribble</p>
+        <p>{from}</p>
       </div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>8:00 PM</div>
+      <div>{description}</div>
+      <div>{new Date(createdAt).toLocaleTimeString()}</div>
     </div>
   );
 };
